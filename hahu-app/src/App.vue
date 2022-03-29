@@ -1,29 +1,13 @@
 <template>
-  <!-- A grey horizontal navbar that becomes vertical on small screens -->
-<nav class="navbar navbar-expand-sm bg-secondary">
-
-  <!-- Links -->
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 2</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 3</a>
-    </li>
-  </ul>
-
-</nav>
+  <open-page></open-page>
 </template>
 
 <script>
-
+import OpenPage from "./components/OpenPage.vue";
 export default {
   name: 'App',
   components: {
-    
+    OpenPage
   }
 }
 </script>
@@ -35,6 +19,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
